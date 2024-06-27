@@ -10,6 +10,7 @@ none
 mkdir $PREFIX/mediamtx && cd $PREFIX/mediamtx
 curl -O https://github.com/moo-the-cow/termux-mediamtx/raw/main/mediamtx && \
 curl -O https://github.com/moo-the-cow/termux-mediamtx/raw/main/mediamtx.yml
+mkdir $PREFIX/var/service/mediamtx
 echo "exec $PREFIX/mediamtx/mediamtx $PREFIX/mediamtx/mediamtx.yml" > $PREFIX/var/service/mediamtx/run
 ```
 
