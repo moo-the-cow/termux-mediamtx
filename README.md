@@ -3,7 +3,9 @@
 This is an `nginx` build for Termux that includes `nginx-rtmp-module`.
 
 ## Pre-Requirements
-none
+```
+pkg install termux-services
+```
 
 ## Installation
 ```
