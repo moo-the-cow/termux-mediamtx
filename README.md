@@ -9,11 +9,10 @@ pkg install termux-services
 
 ## Installation
 ```
-mkdir $PREFIX/mediamtx && cd $PREFIX/mediamtx
-curl -O https://github.com/moo-the-cow/termux-mediamtx/raw/main/mediamtx && \
-curl -O https://github.com/moo-the-cow/termux-mediamtx/raw/main/mediamtx.yml
+mkdir $PREFIX/mediamtx && cd $PREFIX/mediamtx && curl -O https://github.com/moo-the-cow/termux-mediamtx/raw/main/mediamtx.yml
+cd $PREFIX/bin && curl -O https://github.com/moo-the-cow/termux-mediamtx/raw/main/mediamtx && chmod +x mediamtx
 mkdir $PREFIX/var/service/mediamtx
-echo "exec $PREFIX/mediamtx/mediamtx $PREFIX/mediamtx/mediamtx.yml" > $PREFIX/var/service/mediamtx/run
+echo "exec mediamtx $PREFIX/mediamtx/mediamtx.yml" > $PREFIX/var/service/mediamtx/run
 ```
 
 Hint: first time I had to restart the phone and then the following command worked
