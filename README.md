@@ -3,11 +3,7 @@
 This is an `nginx` build for Termux that includes `nginx-rtmp-module`.
 
 ## Pre-Requirements
-Packages:
-git
-```
-apt install git
-```
+none
 
 ## Installation
 ```
