@@ -1,5 +1,7 @@
 # termux-mediamtx
 
+## work in progress - not working (yet)
+
 This is an `nginx` build for Termux that includes `nginx-rtmp-module`.
 
 ## Pre-Requirements
